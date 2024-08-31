@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        button{
+            padding: 10px 5px;
+            margin: 2px 5px;
+            cursor: pointer;
+        }
+        a{
+            margin: 0px 5px;
+        }
+        #stretch{
+            background-color: green;
+            color: white;
+            border: none;
+            transition: padding 0.4s;
+            padding: 5px 10px;
+        }
+        #stretch:hover{
+            padding: 15px 30px;
+        }
+        #shadow{
+            background-color: green;
+            color: white;
+            border: none;
+            transition: margin 0.2s, box-shadow 0.3s;
+            padding: 5px 10px;
+            box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.23);
+        }
+        #shadow:active{
+            margin: 8px 0 0 8px;
+            box-shadow: none;
+        }
+        #mnp{
+            background-color: green;
+            color: white;
+            border: none;
+            transition: margin 0.2s, padding 0.2s;
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+        #mnp:hover{
+            margin: 0px 0px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Pagination</h3>
+    <button>Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <button>Next</button>
+
+    <br>
+
+    <h3>Stretch</h3>
+    <button id="stretch">Stretch</button>
+    
+    <h3>Margin and Padding</h3>
+    <button id="mnp">one</button>
+    <button id="mnp">two</button>
+    <button id="mnp">three</button>
+    
+    <h3>3D Click</h3>
+    <button id="shadow">Shadow</button>
+</body>
+
+</html>
